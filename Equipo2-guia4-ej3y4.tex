@@ -6,5 +6,41 @@
 \usepackage{graphicx}
 
 \begin{document}
-    
+\section{Ejercicio 3}
+\begin{equation}
+    x[n]=\delta[n]+\delta[n-1]+\delta[n-2]+\delta[n-3]
+\end{equation}
+\subsection*{Inciso a)}
+Utilizando la definción de la DTFT:
+\begin{equation}
+    X(e^{j\omega})=\sum_{n=-\infty}^{\infty}x[n]e^{-j\omega n}
+\end{equation}
+Donde:
+\begin{equation}
+    \label{omega}
+    \omega=2\pi f
+\end{equation}
+Llegamos a:
+\begin{equation}
+    \label{DTFT.R}
+    X(e^{j\omega})=1+e^{-j\omega}+e^{-2j\omega}+e^{-3j\omega}
+\end{equation}
+Para el cálculo de la DFT utilizamos la ecuación:
+\begin{equation}
+    X[k]=\sum_{n=0}^{N-1}x[n]e^{-j\omega_k n}
+\end{equation}
+Donde:
+\begin{equation}
+    \label{omega.k}
+    \omega_k=\frac{2\pi k}{N}
+\end{equation}
+Obteniendo:
+\begin{equation}
+    \label{DFT.R}
+    X[k]=1+e^{\frac{-j2\pi k }{4}}+e^{\frac{-j4\pi k}{4}}+e^{\frac{-j6\pi k}{4}}
+\end{equation}
+Al comparar los resultados, ecuación \ref{DTFT.R} con ecuación \ref{DFT.R}, se observa que la diferencia recae en la frecuencia. Debido a esto, en la ecuación 
+\ref{DTFT.R} la frecuencia asociada es la ecuación \ref{omega} que toma valores para todo $f$ dando como resultado un espectro continuo en frecuencia. Esto es un incoveniente a la hora 
+de realizar el cálculo numérico (por los infinitos valores).Por esto para la \textit{DFT} se discretiza la frecuencia angular dando como resultado la ecuación \ref{omega.k}. Se concluye que es imposible encontrar de forma exacta la \textit{DTFT} a partir de la \textit{DFT}. En otras palabras, se puede decir que 
+la \textit{DFT} muestrea el espectro continuo de la \textit{DTFT}.
 \end{document}
