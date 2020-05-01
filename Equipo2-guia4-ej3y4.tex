@@ -7,4 +7,26 @@
 
 \begin{document}
     
+    \subsection*{Calculo exacto de la DTFT}
+
+    Para obtener la DTFT a partir de la \textit{fft}, la cual se puede asociar a un muestreo del espectro
+    de la DTFT, mediante la siguiente relacion 
+
+    \begin{equation}
+        X[k]=X_{DTFT}\left(  \frac{2 \pi}{N} k \right)
+    \end{equation}
+
+    Donde $N$ es el numero de puntos que se utilizan para calcular la DFT.
+
+    El calculo de la DTFT mediante el algoritmo de la \textit{fft} nunca sera exacto. Debido a que la DTFT es continua en frecuencia 
+    mientras que la la DFT no. Pero los valores obtenido de la \textit{fft}, pueden ser considerados como muestras del espectro siempre que se 
+    cumpla que 
+
+    \begin{enumerate}
+        \item Señal sea de duracion finita ($L$).
+        \item Utilizar al menos $L$ puntos.
+    \end{enumerate}
+
+    
+
 \end{document}
