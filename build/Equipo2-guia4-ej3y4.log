@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.23)  1 MAY 2020 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.23)  2 MAY 2020 12:49
 entering extended mode
 **"/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex"
 ("/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex"
@@ -7,16 +6,6 @@ LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-04-06> (/usr/local/share/miktex-texmf/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/local/share/miktex-texmf/tex/latex/base/size10.clo
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.30)  1 MAY 2020 16:41
-entering extended mode
-**d:/Isaias/Documents/Git/informe_parte_2/Equipo2-guia4-ej3y4.tex
-(d:/Isaias/Documents/Git/informe_parte_2/Equipo2-guia4-ej3y4.tex
-LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14> ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
-Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
->>>>>>> inciso-a
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
@@ -30,22 +19,14 @@ File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-<<<<<<< HEAD
 ) (/usr/local/share/miktex-texmf/tex/generic/babel/babel.sty
 Package: babel 2020/03/22 3.42 The Babel package
  (/usr/local/share/miktex-texmf/tex/generic/babel/switch.def
 File: switch.def 2020/03/22 3.42 Babel switching mechanism
-=======
-) ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2020/02/14 3.40 The Babel package
- ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def"
-File: switch.def 2020/02/14 3.40 Babel switching mechanism
->>>>>>> inciso-a
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-<<<<<<< HEAD
 (/usr/local/share/miktex-texmf/tex/latex/arabi/bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
 ) (/home/lautaro/.miktex/texmfs/install/tex/latex/babel-spanish/spanish.ldf
@@ -59,27 +40,11 @@ File: babel.def 2020/03/22 3.42 Babel common definitions
 \bbl@dirlevel=\count176
 )
 \es@quottoks=\toks15
-=======
-("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-spanish\spanish.ldf"
-Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
- ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
-File: babel.def 2020/02/14 3.40 Babel common definitions
-\babel@savecnt=\count175
-\U@D=\dimen135
- ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@readstream=\read2
-\bbl@dirlevel=\count176
-)
-\es@quottoks=\toks14
->>>>>>> inciso-a
 \es@quotdepth=\count177
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
-<<<<<<< HEAD
 )) (/usr/local/share/miktex-texmf/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ) (/home/lautaro/.miktex/texmfs/install/tex/latex/float/float.sty
@@ -107,55 +72,15 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
  (/usr/local/share/miktex-texmf/tex/latex/graphics-def/pdftex.def
-=======
-)) ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\indentfirst.sty"
-Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count178
-\float@exts=\toks15
-\float@box=\box45
-\@float@everytoks=\toks16
-\@floatcapt=\box46
-) ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks17
-\inpenc@posthook=\toks18
-) ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
- ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks19
-) ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
- ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 105.
- ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
->>>>>>> inciso-a
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen136
 \Gin@req@width=\dimen137
-<<<<<<< HEAD
 ) (/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count179
 \l__pdf_internal_box=\box47
-) ("/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux"
-=======
-) ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count179
-\l__pdf_internal_box=\box47
-) (d:/Isaias\Documents\Git\informe_parte_2\build\Equipo2-guia4-ej3y4.aux
->>>>>>> inciso-a
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
-)
+) ("/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux")
 \openout1 = `Equipo2-guia4-ej3y4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -174,81 +99,131 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
-<<<<<<< HEAD
  (/usr/local/share/miktex-texmf/tex/context/base/mkii/supp-pdf.mkii
-=======
- ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
->>>>>>> inciso-a
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count180
 \scratchdimen=\dimen138
 \scratchbox=\box48
 \nofMPsegments=\count181
 \nofMParguments=\count182
-<<<<<<< HEAD
 \everyMPshowfont=\toks21
-=======
-\everyMPshowfont=\toks20
->>>>>>> inciso-a
 \MPscratchCnt=\count183
 \MPscratchDim=\dimen139
 \MPnumerator=\count184
 \makeMPintoPDFobject=\count185
-<<<<<<< HEAD
 \everyMPtoPDFconversion=\toks22
 ) (/usr/local/share/miktex-texmf/tex/latex/epstopdf-pkg/epstopdf-base.sty
-=======
-\everyMPtoPDFconversion=\toks21
-) ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
->>>>>>> inciso-a
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-<<<<<<< HEAD
-(Font)              <7> on input line 15.
+(Font)              <7> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 15.
- [1
+(Font)              <5> on input line 12.
 
-{/home/lautaro/.miktex/texmfs/data/pdftex/config/pdftex.map}] ("/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux"
-=======
-(Font)              <7> on input line 10.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 10.
- [1
 
-{C:/Users/Isaia/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (d:/Isaias\Documents\Git\informe_parte_2\build\Equipo2-guia4-ej3y4.aux
->>>>>>> inciso-a
+LaTeX Warning: Reference `DTFT.R' on page 1 undefined on input line 46.
+
+
+LaTeX Warning: Reference `DFT.R' on page 1 undefined on input line 46.
+
+
+LaTeX Warning: Reference `DTFT.R' on page 1 undefined on input line 47.
+
+
+LaTeX Warning: Reference `omega' on page 1 undefined on input line 47.
+
+
+LaTeX Warning: Reference `omega.k' on page 1 undefined on input line 48.
+
+
+LaTeX Warning: Reference `fig.3b' on page 1 undefined on input line 52.
+
+<Img/punto_3_b.png, id=1, 1734.48pt x 289.08pt>
+File: Img/punto_3_b.png Graphic file (type png)
+<use Img/punto_3_b.png>
+Package pdftex.def Info: Img/punto_3_b.png  used on input line 56.
+(pdftex.def)             Requested size: 345.0pt x 57.49738pt.
+
+LaTeX Warning: Reference `fig.1c' on page 1 undefined on input line 65.
+
+<Img/punto_3_c.png, id=3, 433.62pt x 289.08pt>
+File: Img/punto_3_c.png Graphic file (type png)
+<use Img/punto_3_c.png>
+Package pdftex.def Info: Img/punto_3_c.png  used on input line 68.
+(pdftex.def)             Requested size: 345.0pt x 230.01158pt.
+[1
+
+{/home/lautaro/.miktex/texmfs/data/pdftex/config/pdftex.map}] [2 <./Img/punto_3_b.png> <./Img/punto_3_c.png>] [3]
+
+LaTeX Warning: File `Img/punto_3_e_i.png' not found on input line 142.
+
+
+/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex:142: Package pdftex.def Error: File `Img/punto_3_e_i.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ...cs[width=\textwidth]{Img/punto_3_e_i.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Img/punto_3_e_ii.png' not found on input line 149.
+
+
+/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex:149: Package pdftex.def Error: File `Img/punto_3_e_ii.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 ...s[width=\textwidth]{Img/punto_3_e_ii.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4]
+
+LaTeX Warning: File `Img/punto_3_e_iii.png' not found on input line 156.
+
+
+/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex:156: Package pdftex.def Error: File `Img/punto_3_e_iii.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 ...[width=\textwidth]{Img/punto_3_e_iii.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[5] [6] ("/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux"
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
-) ) 
+)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 2234 strings out of 480931
- 32627 string characters out of 2908714
- 279984 words of memory out of 3000000
- 18121 multiletter control sequences out of 15000+200000
- 533289 words of font info for 27 fonts, out of 3000000 for 9000
+ 2331 strings out of 480931
+ 34294 string characters out of 2908714
+ 284984 words of memory out of 3000000
+ 18194 multiletter control sequences out of 15000+200000
+ 534370 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,4n,35p,257b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf" (1 page, 62144 bytes).
+ 30i,7n,35p,716b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf" (6 pages, 237993 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
-=======
- 2228 strings out of 481556
- 33235 string characters out of 2913869
- 278343 words of memory out of 3000000
- 17489 multiletter control sequences out of 15000+200000
- 533894 words of font info for 29 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 30i,4n,35p,397b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on d:/Isaias\Documents\Git\informe_parte_2\build\Equipo2-guia4-ej3y4.pdf (1 page, 114998 bytes).
-PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
->>>>>>> inciso-a
+ 82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
