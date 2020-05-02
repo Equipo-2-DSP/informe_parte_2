@@ -46,7 +46,6 @@ INPUT /usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmti10.tfm
 INPUT Img/punto_3_b.png
 INPUT ./Img/punto_3_b.png
@@ -60,7 +59,19 @@ INPUT ./Img/punto_3_c.png
 INPUT ./Img/punto_3_c.png
 INPUT ./Img/punto_3_c.png
 INPUT /home/lautaro/.miktex/texmfs/data/pdftex/config/pdftex.map
-INPUT /usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmbx10.tfm
+INPUT Img/punto_3_e_1.png
+INPUT ./Img/punto_3_e_1.png
+INPUT ./Img/punto_3_e_1.png
+INPUT ./Img/punto_3_e_1.png
+INPUT ./Img/punto_3_e_1.png
+INPUT Img/punto_3_e_3.png
+INPUT ./Img/punto_3_e_3.png
+INPUT ./Img/punto_3_e_3.png
+INPUT ./Img/punto_3_e_3.png
+INPUT ./Img/punto_3_e_3.png
+INPUT Img/punto_3_e_3.png
+INPUT ./Img/punto_3_e_3.png
 INPUT /home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux
 INPUT /usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -88,5 +99,3 @@ INPUT /usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb
-INPUT /usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmtt10.pfb
-INPUT /usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmtt10.pfb

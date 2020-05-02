@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.23)  2 MAY 2020 12:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.23)  2 MAY 2020 13:42
 entering extended mode
 **"/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex"
 ("/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex"
@@ -80,7 +80,10 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count179
 \l__pdf_internal_box=\box47
-) ("/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux")
+) ("/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux"
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+)
 \openout1 = `Equipo2-guia4-ej3y4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -120,110 +123,50 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 12.
-
-
-LaTeX Warning: Reference `DTFT.R' on page 1 undefined on input line 46.
-
-
-LaTeX Warning: Reference `DFT.R' on page 1 undefined on input line 46.
-
-
-LaTeX Warning: Reference `DTFT.R' on page 1 undefined on input line 47.
-
-
-LaTeX Warning: Reference `omega' on page 1 undefined on input line 47.
-
-
-LaTeX Warning: Reference `omega.k' on page 1 undefined on input line 48.
-
-
-LaTeX Warning: Reference `fig.3b' on page 1 undefined on input line 52.
-
-<Img/punto_3_b.png, id=1, 1734.48pt x 289.08pt>
+<Img/punto_3_b.png, id=1, 2168.1pt x 578.16pt>
 File: Img/punto_3_b.png Graphic file (type png)
 <use Img/punto_3_b.png>
 Package pdftex.def Info: Img/punto_3_b.png  used on input line 56.
-(pdftex.def)             Requested size: 345.0pt x 57.49738pt.
-
-LaTeX Warning: Reference `fig.1c' on page 1 undefined on input line 65.
-
-<Img/punto_3_c.png, id=3, 433.62pt x 289.08pt>
+(pdftex.def)             Requested size: 345.0pt x 91.9958pt.
+<Img/punto_3_c.png, id=3, 2168.1pt x 578.16pt>
 File: Img/punto_3_c.png Graphic file (type png)
 <use Img/punto_3_c.png>
 Package pdftex.def Info: Img/punto_3_c.png  used on input line 68.
-(pdftex.def)             Requested size: 345.0pt x 230.01158pt.
-[1
+(pdftex.def)             Requested size: 345.0pt x 91.9958pt.
+ [1
 
-{/home/lautaro/.miktex/texmfs/data/pdftex/config/pdftex.map}] [2 <./Img/punto_3_b.png> <./Img/punto_3_c.png>] [3]
-
-LaTeX Warning: File `Img/punto_3_e_i.png' not found on input line 142.
-
-
-/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex:142: Package pdftex.def Error: File `Img/punto_3_e_i.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.142 ...cs[width=\textwidth]{Img/punto_3_e_i.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `Img/punto_3_e_ii.png' not found on input line 149.
-
-
-/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex:149: Package pdftex.def Error: File `Img/punto_3_e_ii.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.149 ...s[width=\textwidth]{Img/punto_3_e_ii.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[4]
-
-LaTeX Warning: File `Img/punto_3_e_iii.png' not found on input line 156.
-
-
-/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex:156: Package pdftex.def Error: File `Img/punto_3_e_iii.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.156 ...[width=\textwidth]{Img/punto_3_e_iii.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[5] [6] ("/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux"
+{/home/lautaro/.miktex/texmfs/data/pdftex/config/pdftex.map}] [2 <./Img/punto_3_b.png> <./Img/punto_3_c.png>]
+<Img/punto_3_e_1.png, id=25, 1445.4pt x 578.16pt>
+File: Img/punto_3_e_1.png Graphic file (type png)
+<use Img/punto_3_e_1.png>
+Package pdftex.def Info: Img/punto_3_e_1.png  used on input line 142.
+(pdftex.def)             Requested size: 345.0pt x 137.99371pt.
+ [3]
+<Img/punto_3_e_3.png, id=30, 1445.4pt x 578.16pt>
+File: Img/punto_3_e_3.png Graphic file (type png)
+<use Img/punto_3_e_3.png>
+Package pdftex.def Info: Img/punto_3_e_3.png  used on input line 149.
+(pdftex.def)             Requested size: 345.0pt x 137.99371pt.
+File: Img/punto_3_e_3.png Graphic file (type png)
+<use Img/punto_3_e_3.png>
+Package pdftex.def Info: Img/punto_3_e_3.png  used on input line 156.
+(pdftex.def)             Requested size: 345.0pt x 137.99371pt.
+ [4 <./Img/punto_3_e_1.png> <./Img/punto_3_e_3.png>] [5] ("/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux"
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
-)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) ) 
 Here is how much of TeX's memory you used:
- 2331 strings out of 480931
- 34294 string characters out of 2908714
- 284984 words of memory out of 3000000
- 18194 multiletter control sequences out of 15000+200000
- 534370 words of font info for 31 fonts, out of 3000000 for 9000
+ 2278 strings out of 480931
+ 33307 string characters out of 2908714
+ 285056 words of memory out of 3000000
+ 18158 multiletter control sequences out of 15000+200000
+ 534202 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,7n,35p,716b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf" (6 pages, 237993 bytes).
+ 30i,7n,35p,720b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf" (5 pages, 675336 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
