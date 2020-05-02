@@ -1,11 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1588366446 "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex" "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf" "Equipo2-guia4-ej3y4" 1588366447
+["pdflatex"] 1588366446 "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex" "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf" "Equipo2-guia4-ej3y4" 1588423808
   "/home/lautaro/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1587655044 10008707 592b054f904aa8abd9264bb3f29df06d ""
   "/home/lautaro/.miktex/texmfs/data/pdftex/config/pdftex.map" 1588029250 79890 a3613e40b3b3fad0a9fac9d92bb2f2f1 ""
   "/home/lautaro/.miktex/texmfs/install/tex/latex/babel-spanish/spanish.ldf" 1587655058 27077 ed7ae8ad64fbc001176aa9f3fa2599b5 ""
   "/home/lautaro/.miktex/texmfs/install/tex/latex/float/float.sty" 1587655061 6916 f35860e0302c70cb81cb70b0a7937693 ""
-  "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex" 1588366446 1016 f6996b098074910bf07148fa20eb5b5c ""
-  "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux" 1588366447 133 1a11fca670740cbf1abf6dd923d4657f ""
+  "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex" 1588423806 1016 f6996b098074910bf07148fa20eb5b5c ""
+  "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux" 1588423806 133 1a11fca670740cbf1abf6dd923d4657f ""
   "/usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmbx12.tfm" 1587654873 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmr12.tfm" 1587654873 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmti10.tfm" 1587654873 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
@@ -33,11 +33,11 @@
   "/usr/local/share/miktex-texmf/tex/latex/graphics/trig.sty" 1587654880 4093 a9ed0e8e6719af98ec5e44cff6b193b1 ""
   "/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdfmode.def" 1587654884 25398 19ae1e59d7f4a47fefb457d851f6f503 ""
   "/usr/local/share/miktex-texmf/tex/latex/tools/indentfirst.sty" 1587654925 1619 d4cd7231755dd1dfa89af8ceddfb0e4d ""
-  "Equipo2-guia4-ej3y4.tex" 1588366446 1016 f6996b098074910bf07148fa20eb5b5c ""
-  "build/Equipo2-guia4-ej3y4.aux" 1588366447 133 1a11fca670740cbf1abf6dd923d4657f "pdflatex"
+  "Equipo2-guia4-ej3y4.tex" 1588423806 1016 f6996b098074910bf07148fa20eb5b5c ""
+  "build/Equipo2-guia4-ej3y4.aux" 1588423806 133 1a11fca670740cbf1abf6dd923d4657f "pdflatex"
   (generated)
-  "build/Equipo2-guia4-ej3y4.pdf"
-  "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.log"
-  "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf"
   "build/Equipo2-guia4-ej3y4.log"
   "build/Equipo2-guia4-ej3y4.aux"
+  "build/Equipo2-guia4-ej3y4.pdf"
+  "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf"
+  "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.log"
