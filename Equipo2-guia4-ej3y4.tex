@@ -8,10 +8,13 @@
 \begin{document}
 
 \section{Ejercicio 3}
+
 \begin{equation}
     x[n]=\delta[n]+\delta[n-1]+\delta[n-2]+\delta[n-3]
 \end{equation}
-\subsection*{Inciso a)}
+
+\subsection{Calculo de la DTFT y la DFT}
+
 Utilizando la definción de la DTFT:
 \begin{equation}
     X(e^{j\omega})=\sum_{n=-\infty}^{\infty}x[n]e^{-j\omega n}
@@ -45,7 +48,22 @@ Al comparar los resultados, ecuación \ref{DTFT.R} con ecuación \ref{DFT.R}, se
 de realizar el cálculo numérico (por los infinitos valores).Por esto para la \textit{DFT} se discretiza la frecuencia angular dando como resultado la ecuación \ref{omega.k}. Se concluye que es imposible encontrar de forma exacta la \textit{DTFT} a partir de la \textit{DFT}. En otras palabras, se puede decir que 
 la \textit{DFT} muestrea el espectro continuo de la \textit{DTFT}.
 
-\subsection*{Calculo exacto de la DTFT}
+\subsubsection{Calculo de la DFT con distintos puntos}    
+Se generaron las señales con N=3, N=4 y N=8 y con dichas señales se calculo la DFT mediante la \textit{fft} y se obtuvieron los graficos presentando en la figura \ref{fig.3b}:
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{Img/punto_3_b.png}
+\caption{Espectros generados con 3,4 y 8 puntos.}
+\label{fig.3b}
+\end{figure}
+
+Se añadio en los graficos una señal punteada que corresponde al espectro real de la señal $x[n]$.
+Se puede apreciar que los valores que toma la DFT coinciden con el valor de la envolvente en dichos puntos, por lo que seria posible aproximar la DTFT con la DFT.
+
+
+
+\subsection{Calculo exacto de la DTFT}
 
     Para obtener la DTFT a partir de la \textit{fft}, la cual se puede asociar a un muestreo del espectro
     de la DTFT, mediante la siguiente relacion 
@@ -64,5 +82,7 @@ la \textit{DFT} muestrea el espectro continuo de la \textit{DTFT}.
         \item Señal sea de duracion finita ($L$).
         \item Utilizar al menos $L$ puntos.
     \end{enumerate}
+    
+
 
 \end{document}
