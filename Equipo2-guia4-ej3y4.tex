@@ -1,21 +1,36 @@
-\documentclass[letterpaper]{article}
-\usepackage[spanish,es-tabla]{babel}
-\usepackage{indentfirst}
-\usepackage{float}
+\documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 \usepackage{graphicx}
-
+\usepackage{float}
+\usepackage{hyperref}
+%\usepackage{subfigure} 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[usenames]{color}
+\usepackage{subcaption}
+\usepackage[left=3cm,right=2cm,top=3cm,bottom=3cm]{geometry}
+\author{Gatica, Isaias \\ Martin, Santiago \\ Saez, Lautaro Ándres \\ Vidman, Xavier Harry}
+\title{Procesamiento digital de señales: estimación del espectro de una señal aperiódica}
+\date{}
 \begin{document}
+\maketitle
+\section{Análisis de una señal aperiódica y discreta}
+En esta sección se analiza el uso de la DFT para estimar el espectro de una señal aperiódica y discreta. Para ello, se considera en primera instancia la siguiente señal:
 
-    \section{Ejercicio 3}
+\begin{equation}
+    x[n]=\delta[n]+\delta[n-1]+\delta[n-2]+\delta[n-3]
+    \label{eq.xn}
+\end{equation}
 
-    \begin{equation}
-        x[n]=\delta[n]+\delta[n-1]+\delta[n-2]+\delta[n-3]
-    \end{equation}
+Para comenzar el estudio se calcula la DTFT y la DFT de la ecuación (\ref{eq.xn}), a fin de realizar una comparación entre los resultados, y poder concluir si es posible utilizar el algoritmo de la DFT para obtener de forma exacta o aproximada la DTFT de una señal aperiódica.
 
-    \subsection{Calculo de la DTFT y la DFT}
+    \subsection{Cálculo de la DTFT y la DFT}
 
-    Utilizando la definción de la DTFT:
+    Utilizando la definción de la DTFT\footnote{Dimitris Manolakiv and Vinay Ingle - ``Applied Digital Signal Processing'' 5th Edition.}:
     \begin{equation}
         X(e^{j\omega})=\sum_{n=-\infty}^{\infty}x[n]e^{-j\omega n}
     \end{equation}
@@ -24,32 +39,45 @@
         \label{omega}
         \omega=2\pi f
     \end{equation}
-    Llegamos a:
+    Se llega a que la DTFT de la ecuación \ref{eq.xn} es:
     \begin{equation}
-        \label{DTFT.R}
         X(e^{j\omega})=1+e^{-j\omega}+e^{-2j\omega}+e^{-3j\omega}
+        \label{DTFT.R}
     \end{equation}
-    Para el cálculo de la DFT utilizamos la ecuación:
+    Siguiendo con el análisis, se calcula la DFT utilizando la siguiente definición\footnote{Idem 1.}:
     \begin{equation}
-        X[k]=\sum_{n=0}^{N-1}x[n]e^{-j\omega_k n}
+        X[k]=\sum_{n=0}^{N-1}x[n]e^{-j\omega_k n} \qquad , 0 \leq k \leq 7
     \end{equation}
     Donde:
     \begin{equation}
         \label{omega.k}
         \omega_k=\frac{2\pi k}{N}
     \end{equation}
-    Obteniendo:
+    Obteniendo como resultado:
     \begin{equation}
         \label{DFT.R}
-        X[k]=1+e^{\frac{-j2\pi k }{4}}+e^{\frac{-j4\pi k}{4}}+e^{\frac{-j6\pi k}{4}}
+        X[k]=1 + e^{-j \frac{\pi}{4} k} + e^{-j \frac{\pi}{2} k} + e^{-j \frac{3 \pi}{4} k}
     \end{equation}
-    Al comparar los resultados, ecuación \ref{DTFT.R} con ecuación \ref{DFT.R}, se observa que la diferencia recae en la frecuencia. Debido a esto, en la ecuación 
-    \ref{DTFT.R} la frecuencia asociada es la ecuación \ref{omega} que toma valores para todo $f$ dando como resultado un espectro continuo en frecuencia. Esto es un incoveniente a la hora 
-    de realizar el cálculo numérico (por los infinitos valores).Por esto para la \textit{DFT} se discretiza la frecuencia angular dando como resultado la ecuación \ref{omega.k}. Se concluye que es imposible encontrar de forma exacta la \textit{DTFT} a partir de la \textit{DFT}. En otras palabras, se puede decir que 
-    la \textit{DFT} muestrea el espectro continuo de la \textit{DTFT}.
+    
+    Al cotejar los resultados obtenidos, se observa que las expresiones son muy similares. La diferencia recae en las frecuencias de las exponenciales. La DTFT expresada en la ecuación (\ref{DTFT.R}) tiene como variable una frecuencia $\omega$ que recorre todos los valores de $f$, dando como resultado un espectro continuo. En cambio, la DFT posee una variable $k$ discreta, que recorre solo los valores enteros entre 0 y $N$. Lo mencionado se puede observar en la figura \ref{fig.3a}.
+    
+    
+    \begin{figure}[htb]
+    \centering
+	%\includegraphics[width=\textwidth]{Img/punto_3_a.png}
+	\caption{DTFT de la señal $x[n]$}
+	\label{fig.3a}
+    \end{figure}
+    
+    De los gráficos mostrados en la figura \ref{fig.3a}, tiene sentido concluir que la DFT muestrea a la DTFT, utilizando los N valores que se le adjudicaron para realizar el cálculo. En la ecuación (\ref{omega.k}) se aprecia como la DFT discretiza la frecuencia angular, dando como resultado que sobre dicha transformada, la DTFT actúe de envolvente. Sin más preámbulos, no se puede obtener de forma exacta la DTFT a partir de la DFT, al ser una expresión que involucre una variable continua.
+    
+    %Al comparar los resultados, ecuación \ref{DTFT.R} con ecuación \ref{DFT.R}, se observa que la diferencia recae en la frecuencia. Debido a esto, en la ecuación 
+    %\ref{DTFT.R} la frecuencia asociada es la ecuación \ref{omega} que toma valores para todo $f$ dando como resultado un espectro continuo en frecuencia. Esto es un incoveniente a la hora 
+    %de realizar el cálculo numérico (por los infinitos valores).Por esto para la \textit{DFT} se discretiza la frecuencia angular dando como resultado la ecuación \ref{omega.k}. Se concluye que es imposible encontrar de forma exacta la \textit{DTFT} a partir de la \textit{DFT}. En otras palabras, se puede decir que 
+    %la \textit{DFT} muestrea el espectro continuo de la \textit{DTFT}.
 
-    \subsection{Calculo de la DFT con distintos puntos}    
-    Se generaron las señales con N=3, N=4 y N=8 y con dichas señales se calculo la DFT mediante la \textit{fft} y se obtuvieron los graficos presentando en la figura \ref{fig.3b}:
+    \subsection{Cálculo de la DFT con distintos puntos}    
+    Continuando con el estudio de la DFT, se la calcula esta vez de forma numérica utilizando la \textit{fft}. Para llevar esto a cabo, se genera la señal de la ecuación (\ref{eq.xn}) para los siguientes valores de N: 3, 4 y 8. Los resultados de los tres caso están presentados en la figura \ref{fig.3b}:
 
     \begin{figure}[htb]
     \centering
@@ -58,7 +86,7 @@
     \label{fig.3b}
     \end{figure}
 
-    Se añadio en los graficos una señal punteada que corresponde al espectro real de la señal $x[n]$.
+    Se añadió en los gráficos una señal punteada que corresponde al espectro real de la señal $x[n]$.
     Se puede apreciar que los valores que toma la DFT coinciden con el valor de la envolvente en dichos puntos, por lo que seria posible aproximar la DTFT con la DFT.
 
     \subsection{DTF con zero-padding}
@@ -159,5 +187,27 @@
     \end{figure}
 
     Se puede apreciar que los espectros representados en las figuras \ref{fig.3ei},\ref{fig.3eii} y \ref{fig.3eiii} coinciden de manera aproximada con lo obtenido de manera teorica. 
+    
+    
+\begin{figure}[htb]
+\begin{subfigure}{.6\textwidth}
+  \centering
+  % include first image
+  \includegraphics[width=.8\linewidth]{Img/punto_3_b.png}  
+  \caption{Put your sub-caption here}
+  \label{fig:sub-first}
+\end{subfigure}
+\begin{subfigure}{.6\textwidth}
+  \centering
+  % include second image
+  \includegraphics[width=\linewidth]{Img/punto_3_c.png}  
+  \caption{Put your sub-caption here}
+  \label{fig:sub-second}
+\end{subfigure}
+\caption{Put your caption here}
+\label{fig:fig}
+\end{figure}
+
+
 
 \end{document}
