@@ -77,32 +77,29 @@ Para comenzar el estudio se calcula la DTFT y la DFT de la ecuación (\ref{eq.xn
     %la \textit{DFT} muestrea el espectro continuo de la \textit{DTFT}.
 
     \subsection{Cálculo de la DFT con distintos puntos}    
-    Continuando con el estudio de la DFT, se realiza su calculo de forma numérica utilizando la \textit{fft}. Para llevar esto a cabo, se genera la señal de la ecuación (\ref{eq.xn}) para los siguientes valores de N: 3, 4 y 8. Los resultados de los tres casos están presentados en la figura \ref{fig.3b}:
+    Continuando con el estudio de la DFT, se realiza su cálculo de forma numérica utilizando la \textit{fft}. Para llevar esto a cabo, se genera la señal de la ecuación (\ref{eq.xn}) para los siguientes valores de N: 3, 4 y 8. Los resultados de los tres casos están presentados en la figura \ref{fig.3b}, junto con una señal punteada que corresponde al espectro real de la señal $x[n]$:
 
     \begin{figure}[htb]
     \centering
-    \includegraphics[width=\textwidth]{Img/punto_3_b.png}
+    \includegraphics[width=\textwidth]{Img/punto_3_b.png} 
     \caption{Espectros generados con N=3, N=4 y N=8.}
     \label{fig.3b}
     \end{figure}
-
-    Se añadió en los gráficos una señal punteada que corresponde al espectro real de la señal $x[n]$.
-    Se puede apreciar que los valores de la DFT coinciden con el valor de la envolvente en dichos puntos, por lo que es posible aproximar la DTFT con la DFT.
-
-    \subsection{DTF con zero-padding}
-    En esta sección, se realiza el cálculo de la DFT de la señal (\ref{eq.xn}), pero esta vez, con el objetivo de estudiar el efecto del \textit{zero-padding}. Dicho efecto consiste en rellenar con ceros una señal hasta un número determinado de puntos. En este caso, se tomaron las señales anteriores (valores de N: 3, 4 y 8) y se rellenaron con ceros hasta tener 256 puntos, para luego calcular su DFT. Los resultados obtenidos se muestran en la figura \ref{fig.1c}.
     
-    \begin{figure}[htb]
+    Analizando los resultados de la figura \ref{fig.3b}, se puede ver que tomar 3 puntos de la señal original difiere con los resultados de la envolvente, y al continuar realizando pruebas con otros valores de N, se observa que al tomar valores de $N$ por debajo de 4, el espectro obtenido a través de la \textit{fft} posee valores diferentes al original. Esto sucede porque se está recortando la señal $x[n]$, y por ende, perdiendo información, lo que termina en un espectro erróneo.
+    Asimismo, los valores de la DFT coinciden con el valor de la envolvente en los casos que $N=4$ y $N=8$. Extrapolando estos resultados, se puede decir que para cualquier valor de $N$ mayor a 4, los valores calculados por la \textit{fft} coinciden con los valores de la envolvente.
+
+    \subsection{DFT con zero-padding}
+    En esta sección, se realiza el cálculo de la DFT de la señal (\ref{eq.xn}), pero esta vez, con el objetivo de estudiar el efecto del \textit{zero-padding}. Dicho efecto consiste en rellenar con ceros una señal hasta un número determinado de puntos. En este caso, se tomaron las señales anteriores (valores de N: 3, 4 y 8) y se rellenaron con ceros hasta tener 256 puntos, para luego calcular su DFT mediante la \textit{fft}. Los resultados obtenidos se muestran en la figura \ref{fig.1c}.
+    
+    \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{Img/punto_3_c.png}
     \caption{\textit{fft} con zero-padding hasta 256 puntos para 3,4 y 8 puntos de la señal $x[n]$}
     \label{fig.1c}
     \end{figure}
     
-    Analizando los resultados de la figura 3, se puede ver que tomar 3 puntos de la señal original difiere con los resultados de tomar 4 u 8 puntos, los cuales son iguales. Si se siguieran realizando pruebas con otros valores de N, se observaría que al tomar valores de $N$ por debajo de 4, el espectro obtenido a través de la \textit{fft} es diferente al original. Sin embargo, no hay diferencia en el resultado del espectro al tomar valores de $N$ por encima de 4.
-    
-    
-    Por lo tanto, se concluye que siempre que no se recorte la señal y se tomen todos los valores de $x[n]$ para el cálculo de la DFT, el método \textit{zero-padding} no agrega más información al espectro, sino que solo permite una mejor visualización del espectro real de señal, el cual es continuo. No obstante, por más que se utilice el \textit{zero-paddding}, si no se realiza con todos los valores distintos de cero de la señal $x[n]$, la aproximación seguirá siendo incorrecta.
+    Al observar la figura \ref{fig.1c}, se concluye que el método \textit{zero-padding} no agrega más información al espectro, sino que solo permite una mejor visualización del espectro real de señal. No obstante, por más que se utilice el \textit{zero-paddding}, si no se realiza con todos los valores distintos de cero de la señal $x[n]$, la aproximación seguirá siendo incorrecta.
     
     %Ahora es posible observar de mejor manera, lo comentado en el apartado anterior, como el zero-padding no agrega mas información al espectro sino que permite una mejor visualización del mismo, cuando se toman 3 puntos de la señal original, no se llega a tomar la señal completa si no que se recorta, por lo que el espectro si bien un aspecto similar, es mas ancho y de menor amplitud (al ser un cajon de 3 puntos y no de 4 puntos como la señal original), y para los casos de N=4 y N=8 que si se utiliza toda la información de la señal $x[n]$ se ve claramente que los valores de la DFT corresponden a muestras de la DTFT.
 
@@ -130,8 +127,8 @@ Para comenzar el estudio se calcula la DTFT y la DFT de la ecuación (\ref{eq.xn
     En esta sección se utiliza el código adjunto a este informe para calcular la DTFT de tres señales aperiódicas discretas. En principio, se calcula la DTFT de forma teórica. Luego, se muestra en gráficos el resultado obtenido de forma numérica.
     
 
-    \subsubsection*{i)}
-    Primera señal:
+    \subsubsection*{i) Primera señal:}
+
     \begin{equation}
     x_{1}[n] = \left\{ 
         \begin{array}{ll} 
@@ -150,8 +147,8 @@ Para comenzar el estudio se calcula la DTFT y la DFT de la ecuación (\ref{eq.xn
     X_{1}(e^{j \omega})=25 sinc^{2}\left(\frac{5 \omega}{2 \pi}\right) e^{- j \omega} 
     \end{equation}
 
-    \subsubsection*{ii)}
-    Segunda señal:
+    \subsubsection*{ii) Segunda señal:}
+
     \begin{equation} 
         x_{2}[n] = \left\{ 
         \begin{array}{ll} 
@@ -167,8 +164,8 @@ Para comenzar el estudio se calcula la DTFT y la DFT de la ecuación (\ref{eq.xn
     X_{2}(e^{j \omega})= \frac{sin(\frac{ \omega 5}{2})}{sin (\frac{\omega}{2})}
     \end{equation}
 
-    \subsubsection*{iii)}
-    Tercera señal:
+    \subsubsection*{iii) Tercera señal:}
+
     \begin{equation} 
         x_{3}[n]=(-0,5)^{n}u[n]
     \end{equation}

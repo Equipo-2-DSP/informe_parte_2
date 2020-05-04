@@ -1,6 +1,6 @@
 \BOOKMARK [1][-]{section.1}{An\341lisis de una se\361al aperi\363dica y discreta}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{C\341lculo de la DTFT y la DFT}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{C\341lculo de la DFT con distintos puntos}{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{DTF con zero-padding}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.3}{DFT con zero-padding}{section.1}% 4
 \BOOKMARK [2][-]{subsection.1.4}{Aproximaci\363n de la DTFT utilizando la fft}{section.1}% 5
 \BOOKMARK [2][-]{subsection.1.5}{C\363digo para la obtenci\363n de la DTFT:}{section.1}% 6
