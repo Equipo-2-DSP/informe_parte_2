@@ -26,7 +26,7 @@ En esta sección se analiza el uso de la DFT para estimar el espectro de una se�
     \label{eq.xn}
 \end{equation}
 
-Para comenzar el estudio se calcula la DTFT y la DFT de la ecuación (\ref{eq.xn}), a fin de realizar una comparación entre los resultados, y poder concluir si es posible utilizar el algoritmo de la DFT para obtener de forma exacta o aproximada la DTFT de una señal aperiódica.
+Para comenzar el estudio se calcula la DTFT y la DFT de la ecuación (\ref{eq.xn}), a fin de realizar una comparación entre los resultados, y poder concluir si es posible utilizar a la DFT para obtener de forma exacta o aproximada la DTFT de una señal aperiódica.
 
     \subsection{Cálculo de la DTFT y la DFT}
 
@@ -77,56 +77,61 @@ Para comenzar el estudio se calcula la DTFT y la DFT de la ecuación (\ref{eq.xn
     %la \textit{DFT} muestrea el espectro continuo de la \textit{DTFT}.
 
     \subsection{Cálculo de la DFT con distintos puntos}    
-    Continuando con el estudio de la DFT, se la calcula esta vez de forma numérica utilizando la \textit{fft}. Para llevar esto a cabo, se genera la señal de la ecuación (\ref{eq.xn}) para los siguientes valores de N: 3, 4 y 8. Los resultados de los tres caso están presentados en la figura \ref{fig.3b}:
+    Continuando con el estudio de la DFT, se realiza su calculo de forma numérica utilizando la \textit{fft}. Para llevar esto a cabo, se genera la señal de la ecuación (\ref{eq.xn}) para los siguientes valores de N: 3, 4 y 8. Los resultados de los tres casos están presentados en la figura \ref{fig.3b}:
 
     \begin{figure}[htb]
     \centering
     \includegraphics[width=\textwidth]{Img/punto_3_b.png}
-    \caption{Espectros generados con 3,4 y 8 puntos.}
+    \caption{Espectros generados con N=3, N=4 y N=8.}
     \label{fig.3b}
     \end{figure}
 
     Se añadió en los gráficos una señal punteada que corresponde al espectro real de la señal $x[n]$.
-    Se puede apreciar que los valores que toma la DFT coinciden con el valor de la envolvente en dichos puntos, por lo que seria posible aproximar la DTFT con la DFT.
+    Se puede apreciar que los valores de la DFT coinciden con el valor de la envolvente en dichos puntos, por lo que es posible aproximar la DTFT con la DFT.
 
     \subsection{DTF con zero-padding}
-    Se realizo ahora nuevamente el calculo de la DFT de las señales de la seccion anterior pero ahora con el objetivo de estudiar el efecto del \textit{zero-padding}, el cual consiste en rellenar con ceros una señal hasta un numero determinado de puntos. Se tomaron las señales anteriores y se rellenaron con ceros hasta tener 256 puntos para luego calcular su DFT, los resultados obtenidos se muestran en la figura \ref{fig.1c}
+    En esta sección, se realiza el cálculo de la DFT de la señal (\ref{eq.xn}), pero esta vez, con el objetivo de estudiar el efecto del \textit{zero-padding}. Dicho efecto consiste en rellenar con ceros una señal hasta un número determinado de puntos. En este caso, se tomaron las señales anteriores (valores de N: 3, 4 y 8) y se rellenaron con ceros hasta tener 256 puntos, para luego calcular su DFT. Los resultados obtenidos se muestran en la figura \ref{fig.1c}.
+    
     \begin{figure}[htb]
     \centering
     \includegraphics[width=\textwidth]{Img/punto_3_c.png}
     \caption{\textit{fft} con zero-padding hasta 256 puntos para 3,4 y 8 puntos de la señal $x[n]$}
     \label{fig.1c}
     \end{figure}
-    Ahora es posible observar de mejor manera, lo comentado en el apartado anterior, como el zero-padding no agrega mas informacion al espectro sino que permite una mejor visualización del mismo, cuando se toman 3 puntos de la señal original, no se llega a tomar la señal completa si no que se recorta, por lo que el espectro si bien un aspecto similar, es mas ancho y de menor amplitud(al ser un cajon de 3 puntos y no de 4 puntos como la señal original), y para los casos de N=4 y N=8 que si se utiliza toda la informacion de la señal $x[n]$ se ve claramente que los valores de la DFT corresponden a muestras de la DTFT.
+    
+    Analizando los resultados de la figura 3, se puede ver que tomar 3 puntos de la señal original difiere con los resultados de tomar 4 u 8 puntos, los cuales son iguales. Si se siguieran realizando pruebas con otros valores de N, se observaría que al tomar valores de $N$ por debajo de 4, el espectro obtenido a través de la \textit{fft} es diferente al original. Sin embargo, no hay diferencia en el resultado del espectro al tomar valores de $N$ por encima de 4.
+    
+    
+    Por lo tanto, se concluye que siempre que no se recorte la señal y se tomen todos los valores de $x[n]$ para el cálculo de la DFT, el método \textit{zero-padding} no agrega más información al espectro, sino que solo permite una mejor visualización del espectro real de señal, el cual es continuo. No obstante, por más que se utilice el \textit{zero-paddding}, si no se realiza con todos los valores distintos de cero de la señal $x[n]$, la aproximación seguirá siendo incorrecta.
+    
+    %Ahora es posible observar de mejor manera, lo comentado en el apartado anterior, como el zero-padding no agrega mas información al espectro sino que permite una mejor visualización del mismo, cuando se toman 3 puntos de la señal original, no se llega a tomar la señal completa si no que se recorta, por lo que el espectro si bien un aspecto similar, es mas ancho y de menor amplitud (al ser un cajon de 3 puntos y no de 4 puntos como la señal original), y para los casos de N=4 y N=8 que si se utiliza toda la información de la señal $x[n]$ se ve claramente que los valores de la DFT corresponden a muestras de la DTFT.
 
 
-    \subsection{Calculo exacto de la DTFT}
-
-        Para obtener la DTFT a partir de la \textit{fft}, la cual se puede asociar a un muestreo del espectro
-        de la DTFT, mediante la siguiente relacion 
-
+    \subsection{Aproximación de la DTFT utilizando la \textit{fft}}
+        En el siguiente apartado se concluye sobre las condiciones necesarias que debe tener una señal aperiódica, para lograr aproximar de una manera correcta el cálculo de su DTFT con el algoritmo \textit{fft}. 
+        
+        
+        De los análisis anteriores se sabe que la DFT muestrea al espectro continuo de una señal $x[n]$ aperiódica. Por lo tanto, se afirma que no existe una manera numérica de calcular la DTFT para señales aperiódicas, ya que se necesitaría almacenar infinitos valores para realizarlo. La siguiente ecuación expresa la relación que hay entre la frecuencia discretizada de la DFT con la frecuencia de la DTFT: 
+        
         \begin{equation}
             X[k]=X_{DTFT}\left(  \frac{2 \pi}{N} k \right)
         \end{equation}
 
-        Donde $N$ es el numero de puntos que se utilizan para calcular la DFT.
+        Donde $N$ es el número de puntos que se utilizan para calcular la DFT.
 
-        El calculo de la DTFT mediante el algoritmo de la \textit{fft} nunca sera exacto. Debido a que la DTFT es continua en frecuencia 
-        mientras que la la DFT no. Pero los valores obtenido de la \textit{fft}, pueden ser considerados como muestras del espectro siempre que se 
-        cumpla que 
+        No obstante, hay ciertas condiciones que se deben cumplir para lograr una buena aproximación, y para que los valores obtenidos de la \textit{fft} sean considerados muestras del espectro real de la señal. Las condiciones son las siguientes:
 
         \begin{enumerate}
-            \item Señal sea de duracion finita ($L$).
-            \item Utilizar al menos $L$ puntos.
+            \item La señal debe ser de duración finita ($L$).
+            \item Al realizar el cálculo numérico, utilizar al menos $L$ puntos.
         \end{enumerate}
-        
-
-
     
-    \subsection{codigo para la obtencion de la DTFT}
-    Resultado teórico de cada una de las ecuaciones: 
+    \subsection{Código para la obtención de la DTFT:}
+    En esta sección se utiliza el código adjunto a este informe para calcular la DTFT de tres señales aperiódicas discretas. En principio, se calcula la DTFT de forma teórica. Luego, se muestra en gráficos el resultado obtenido de forma numérica.
+    
 
     \subsubsection*{i)}
+    Primera señal:
     \begin{equation}
     x_{1}[n] = \left\{ 
         \begin{array}{ll} 
@@ -136,12 +141,17 @@ Para comenzar el estudio se calcula la DTFT y la DFT de la ecuación (\ref{eq.xn
         \end{array} 
         \right.
     \end{equation}
-    Por tabla se llega al resultado:
+    
+    
+    Resultado teórico:
+    
+    
     \begin{equation}
     X_{1}(e^{j \omega})=25 sinc^{2}\left(\frac{5 \omega}{2 \pi}\right) e^{- j \omega} 
     \end{equation}
 
     \subsubsection*{ii)}
+    Segunda señal:
     \begin{equation} 
         x_{2}[n] = \left\{ 
         \begin{array}{ll} 
@@ -151,62 +161,70 @@ Para comenzar el estudio se calcula la DTFT y la DFT de la ecuación (\ref{eq.xn
         \right.
     \end{equation}
 
-    Mediante el uso de tablas de transformada se llego a que el espectro esta dado por:
+    Resultado teórico:
+    
     \begin{equation}
     X_{2}(e^{j \omega})= \frac{sin(\frac{ \omega 5}{2})}{sin (\frac{\omega}{2})}
     \end{equation}
 
     \subsubsection*{iii)}
+    Tercera señal:
     \begin{equation} 
         x_{3}[n]=(-0,5)^{n}u[n]
     \end{equation}
-    Donde nuevamente su espectro se obtuvo por tablas, dando como resultado:
+    
+    Resultado teórico:
+    
     \begin{equation}
     X(e^{j \omega})=\frac{1}{1+0,5 e^{j \omega}}
     \end{equation}
-    Mediante la implementacion del codigo se calculo la DTFT y se obtuvieron las siguiente figuras:
+    
+    A continuación, se pueden observar los resultados de la DTFT de forma numérica en las siguientes figuras:
+    
     \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{Img/punto_3_e_1.png}
-    \caption{Espectro de la señal $x_{1}[n]$ mediante el algoritmo.}
+    \caption{espectro de la señal $x_{1}[n]$ mediante el algoritmo.}
     \label{fig.3ei}
     \end{figure} 
 
+
     \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{Img/punto_3_e_3.png}
-    \caption{Espectro de la señal $x_{2}[n]$ mediante el algoritmo.}
+    \caption{espectro de la señal $x_{2}[n]$ mediante el algoritmo.}
     \label{fig.3eii}
     \end{figure}
 
+
     \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{Img/punto_3_e_3.png}
-    \caption{Espectro de la señal $x_{3}[n]$ mediante el algoritmo.}
+    \caption{espectro de la señal $x_{3}[n]$ mediante el algoritmo.}
     \label{fig.3eiii}
     \end{figure}
 
-    Se puede apreciar que los espectros representados en las figuras \ref{fig.3ei},\ref{fig.3eii} y \ref{fig.3eiii} coinciden de manera aproximada con lo obtenido de manera teorica. 
+    Se puede apreciar que los espectros representados en las figuras \ref{fig.3ei},\ref{fig.3eii} y \ref{fig.3eiii} coinciden de manera aproximada con lo obtenido de manera teórica. 
     
     
-\begin{figure}[htb]
-\begin{subfigure}{.6\textwidth}
-  \centering
+%\begin{figure}[htb]
+%\begin{subfigure}{.6\textwidth}
+%  \centering
   % include first image
-  \includegraphics[width=.8\linewidth]{Img/punto_3_b.png}  
-  \caption{Put your sub-caption here}
-  \label{fig:sub-first}
-\end{subfigure}
-\begin{subfigure}{.6\textwidth}
-  \centering
+%  \includegraphics[width=.8\linewidth]{Img/punto_3_b.png}  
+%  \caption{Put your sub-caption here}
+%  \label{fig:sub-first}
+%\end{subfigure}
+%\begin{subfigure}{.6\textwidth}
+%  \centering
   % include second image
-  \includegraphics[width=\linewidth]{Img/punto_3_c.png}  
-  \caption{Put your sub-caption here}
-  \label{fig:sub-second}
-\end{subfigure}
-\caption{Put your caption here}
-\label{fig:fig}
-\end{figure}
+%  \includegraphics[width=\linewidth]{Img/punto_3_c.png}  
+%  \caption{Put your sub-caption here}
+%  \label{fig:sub-second}
+%\end{subfigure}
+%\caption{Put your caption here}
+%\label{fig:fig}
+%\end{figure}
 
 
 
