@@ -7,4 +7,51 @@
 
 \begin{document}
     
+
+\section{Ejercicio 4}
+
+\subsubsection*{Inciso a)}
+\begin{equation}
+    x(t)=u(t-3)-u(t)
+\end{equation}
+Utilizando la definción de la CTFT:
+\begin{equation}
+    X(j\Omega)=\int_{-\infty}^{\infty} x(t)e^{-j\Omega t}dt
+\end{equation}
+Y analizando que la señal $x(t)$ resulta ser un cajon de amplitud negativa en el intervalo del tiempo $0\leq t \leq 3$:
+\begin{equation}
+    X(j\Omega)=\int_{0}^{3} -1e^{-j\Omega t}dt
+\end{equation}
+\begin{equation}
+    X(j\Omega)=\frac{1}{j\Omega} \left[e^{-j\Omega t} \vert_{3}^{0}\right] = \frac{e^{-3j\Omega} - 1}{j\Omega}
+\end{equation}
+Si acomodamos la ecuación anterior llegamos a:
+\begin{equation}
+    X(j\Omega) = -3e^{\frac{-3j\Omega}{2}} sinc(3F)
+\end{equation}
+\subsubsection*{Inciso b)}
+Para el cálculo de la \textit{DFT} se muestrea la señal $x(t)$ utilizando una frecuencia de muestreo $F_s=1Hz$ con la intencíon de obtener 4 muestras del intervalo distinto de cero de la señal original. El resultado de
+este muestreo es igual a la ecuación \ref{S.disc} pero invertida en amplitud. Luego, aplicamos la ecuación \ref{DFT} utilizando $N=4$ con el fin de utilizar todas las muestras distintas de cero:
+\begin{equation}
+    X[k]=\sum_{n=0}^{3}-1e^{-j\omega_k n} = \frac{1 - e^{-j4\omega_k}}{1-e^{-j\omega_k}} = e^{-j\frac{3}{4}\pi k} \frac{sin(\pi k)}{sin(\pi k/4)}
+\end{equation} 
+
+Si hacemos un analisis de las ecuaciones utilizadas para el calculo de la DFT y la DFTF, siendo la ecuacion de la DTFT: 
+\begin{equation}
+    \label{DTFT}
+	\tilde{X}(e^{j \omega T}) = \sum_{n=- \infty}^{\infty} x_{c}(nT) e^{-j \omega nT}=\frac{1}{T}\sum_{m=- \infty}^{\infty} X_{c} \left(j \omega - j \frac{2 \pi}{T}	m \right)	
+\end{equation}
+ donde $x_{c}(nT)$ son las muestras de $x_{c}(t)$.
+ Con los resultados obtenidos del analisis de una señal aperidioca discreta, se obtuvo que la relacion entre la DTFT y la DFT viene dada por el muestreo en frecuencia de la DFTF por parte de la DFT, la relacion
+se ve en la ecuacion (omega.k creo que era Xavi). Reemplazando dicha relación en la ecuacion (\ref{DTFT}) se obtiene la expresion de la DFT :
+ \begin{equation}
+ X[k] = \frac{1}{T}\sum_{m=- \infty}^{\infty} X_{c} \left(j \frac{2 \pi k }{N} - j \frac{2 \pi}{T}	m \right)    k =0,1..., N-1 \\
+ \end{equation}
+ quedando entonces expuesta la relacion entre ambas.
+ 
+ Si ahora queremos analizar la relacion existente entre la DTFT y la CTFT, solo basta con realizar un nuevo analisis de la ecuacion (\ref{DTFT}), en ella se puede ver implicita la relacion buscada.
+ Por inspeccion de la ultima expresion, vemos que la DFTF de la señal muestrada no es mas que la periodización del espectro de la señal continua original.
+ En resumen la relacion entre la DTFT y la CTFT es que la DTFT es un espectro periodico con posible aliasing de la señal CTFT.
+ 
+
 \end{document}
