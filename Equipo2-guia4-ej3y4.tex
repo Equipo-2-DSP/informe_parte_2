@@ -160,4 +160,20 @@
 
     Se puede apreciar que los espectros representados en las figuras \ref{fig.3ei},\ref{fig.3eii} y \ref{fig.3eiii} coinciden de manera aproximada con lo obtenido de manera teorica. 
 
+\subsubsection*{calculo aproximado de la CTFT con FFT con N=10 y N=1000}
+se muestrea la señal $x_{c}(t)$ a la frecuencia $Fs=3 Hz$ y se obtuvo una señal $x[n]$ la cual consta de 9 puntos diferentes de cero, para luego calcularse la DFT con 2 valores de N distinto; N=10 y N=1000, se obtuvo el siguiente resultado:
+\begin{figure}
+\centering
+    \includegraphics[width=\textwidth]{Img/punto_4_e.png}
+    \caption{DFT de la señal x[n] para N=10 y N=1000}
+    \label{fig.4e}
+\end{figure} 
+Si se observa la figura \ref{fig.4e} se da la ilusion de que al utilizar un numero mayor de puntos para el calculo de la DFT, el resultado seria mas exacto , ya que se parece mas al espectro teorico, pero como la señal pasados los 9 puntos son solo ceros, al tomar N=1000 las muestras adicionales no contienen informacion, la frecuencia a la que se distribuye los valores de la DFT en el espectro disminuye (ver la relacion en la ecuacion \ref{omega.k})
+lo que genera una mejor visualizacion del espectro, pero no agrega informacion adicional, por lo tanto la estimacion de la CTFT es la misma.
+
+
+
+
+
+
 \end{document}
