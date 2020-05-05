@@ -269,7 +269,19 @@ se ve en la ecuacion (omega.k creo que era Xavi). Reemplazando dicha relación e
  Por inspeccion de la ultima expresion, vemos que la DFTF de la señal muestrada no es mas que la periodización del espectro de la señal continua original.
  En resumen la relacion entre la DTFT y la CTFT es que la DTFT es un espectro periodico con posible aliasing de la señal CTFT.
  
- \subsection{ CTFT a parti de la DFT }
+
+ \subsubsection*{calculo aproximado de la CTFT con FFT con N=10 y N=1000}
+ se muestrea la señal $x_{c}(t)$ a la frecuencia $Fs=3 Hz$ y se obtuvo una señal $x[n]$ la cual consta de 9 puntos diferentes de cero, para luego calcularse la DFT con 2 valores de N distinto; N=10 y N=1000, se obtuvo el siguiente resultado:
+ \begin{figure}
+ \centering
+     \includegraphics[width=\textwidth]{Img/punto_4_e.png}
+     \caption{DFT de la señal x[n] para N=10 y N=1000}
+     \label{fig.4e}
+ \end{figure} 
+ Si se observa la figura \ref{fig.4e} se da la ilusion de que al utilizar un numero mayor de puntos para el calculo de la DFT, el resultado seria mas exacto , ya que se parece mas al espectro teorico, pero como la señal pasados los 9 puntos son solo ceros, al tomar N=1000 las muestras adicionales no contienen informacion, la frecuencia a la que se distribuye los valores de la DFT en el espectro disminuye (ver la relacion en la ecuacion \ref{omega.k})
+ lo que genera una mejor visualizacion del espectro, pero no agrega informacion adicional, por lo tanto la estimacion de la CTFT es la misma.
+
+ \subsection{ CTFT a partir de la DFT }
  Para el cálculo de la CTFT utilizando la DFT se realizan los siguientes pasos:
  \begin{itemize}
      \item Obtención de la señal $x[n]$ muestreando la señal $x(t)$ con una frecuencia $F_s$.
@@ -290,5 +302,12 @@ se ve en la ecuacion (omega.k creo que era Xavi). Reemplazando dicha relación e
 \end{enumerate}
 
 Por último, el efecto del método zero-padding tiene como finalidad mejorar la visualización del espectro. (Esto se desarrollo en la sección (ref)).
+
+
+
+
+
+
+
 
 \end{document}
