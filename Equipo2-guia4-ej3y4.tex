@@ -269,5 +269,26 @@ se ve en la ecuacion (omega.k creo que era Xavi). Reemplazando dicha relación e
  Por inspeccion de la ultima expresion, vemos que la DFTF de la señal muestrada no es mas que la periodización del espectro de la señal continua original.
  En resumen la relacion entre la DTFT y la CTFT es que la DTFT es un espectro periodico con posible aliasing de la señal CTFT.
  
+ \subsection{ CTFT a parti de la DFT }
+ Para el cálculo de la CTFT utilizando la DFT se realizan los siguientes pasos:
+ \begin{itemize}
+     \item Obtención de la señal $x[n]$ muestreando la señal $x(t)$ con una frecuencia $F_s$.
+     \item Implementar el algoritmo de la fft a la señal muestreada.
+     \item Normalizar el resultado obtenido de la fft dividiendo por $F_s$.
+     \item VER - Filtrar un periodo del espectro obtenido de la DFT - VER
+ \end{itemize}
+
+ Bajo ninguna condición la estimación de la CTFT puede ser exacta debido a su naturelaza continua y los problemas numericos que esto conlleva. Sin embargo, se puede obtener una 
+ estimación precisa si se eligen de manera correcta los siguientes parametros:
+ \begin{enumerate}
+     \item Frecuencia de muestreo: se debe elegir una $F_s$ que cumpla el teorema de muestreo (ref). Esta condición se ve reflejada en el \textit{aliasing} resultante del espectro. Si bien el espectro siempre va presentar aliasing (debido a que se esta muestreando una señal aperiódica) éste se puede disminuir al utilizar $F_s$ cada vez mayores.
+     \item Cantidad de muestras: se debe elegir una cantidad de muestras $N$ mínima que contenga la información de la señal muestreada. A partir de esta idea se desprenden dos situaciones:
+     \begin{itemize}
+         \item Señal $x[n]$ de duración finita: En este caso si la longitud de la señal es igual a $L$, la cantidad de muestras debe ser $N \geq L$.
+         \item Señal $x[n]$ de duración infinita: En este caso la cantidad de muestras $N$ debe ser lo mas representativa posible, es decir mientras mayor sea $N$ mejor sera la aproximación.
+     \end{itemize}
+\end{enumerate}
+
+Por último, el efecto del método zero-padding tiene como finalidad mejorar la visualización del espectro. (Esto se desarrollo en la sección (ref)).
 
 \end{document}
