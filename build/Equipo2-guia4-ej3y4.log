@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.23)  4 MAY 2020 18:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.23)  5 MAY 2020 15:23
 entering extended mode
 **"/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex"
 ("/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex"
@@ -388,7 +388,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
  (/usr/local/share/miktex-texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Img/punto_3_a.png, id=33, 722.7pt x 578.16pt>
+<Img/punto_3_a.png, id=37, 722.7pt x 578.16pt>
 File: Img/punto_3_a.png Graphic file (type png)
 <use Img/punto_3_a.png>
 Package pdftex.def Info: Img/punto_3_a.png  used on input line 67.
@@ -396,60 +396,105 @@ Package pdftex.def Info: Img/punto_3_a.png  used on input line 67.
  [1
 
 {/home/lautaro/.miktex/texmfs/data/pdftex/config/pdftex.map}]
-<Img/punto_3_b.png, id=66, 2168.1pt x 578.16pt>
+<Img/punto_3_b.png, id=70, 2168.1pt x 578.16pt>
 File: Img/punto_3_b.png Graphic file (type png)
 <use Img/punto_3_b.png>
 Package pdftex.def Info: Img/punto_3_b.png  used on input line 84.
 (pdftex.def)             Requested size: 455.24411pt x 121.39072pt.
  [2 <./Img/punto_3_a.png> <./Img/punto_3_b.png>]
-<Img/punto_3_c.png, id=79, 2168.1pt x 578.16pt>
+<Img/punto_3_c.png, id=83, 2168.1pt x 578.16pt>
 File: Img/punto_3_c.png Graphic file (type png)
 <use Img/punto_3_c.png>
 Package pdftex.def Info: Img/punto_3_c.png  used on input line 97.
 (pdftex.def)             Requested size: 455.24411pt x 121.39072pt.
  [3 <./Img/punto_3_c.png>]
-<Img/punto_3_e_1.png, id=91, 1445.4pt x 578.16pt>
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 130.
+ (/usr/local/share/miktex-texmf/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+<Img/punto_3_e_1.png, id=95, 1445.4pt x 578.16pt>
 File: Img/punto_3_e_1.png Graphic file (type png)
 <use Img/punto_3_e_1.png>
-Package pdftex.def Info: Img/punto_3_e_1.png  used on input line 183.
+Package pdftex.def Info: Img/punto_3_e_1.png  used on input line 184.
 (pdftex.def)             Requested size: 455.24411pt x 182.0949pt.
- [4]
-<Img/punto_3_e_2.png, id=106, 1445.4pt x 578.16pt>
+
+Overfull \hbox (13.73615pt too wide) in paragraph at lines 184--185
+ [][]\OT1/cmr/m/n/10.95 '''[] 
+ []
+
+
+Overfull \hbox (13.73615pt too wide) in paragraph at lines 185--185
+[][]\OT1/cmr/m/n/10.95 ''' [] 
+ []
+
+[4]
+<Img/punto_3_e_2.png, id=111, 1445.4pt x 578.16pt>
 File: Img/punto_3_e_2.png Graphic file (type png)
 <use Img/punto_3_e_2.png>
-Package pdftex.def Info: Img/punto_3_e_2.png  used on input line 191.
+Package pdftex.def Info: Img/punto_3_e_2.png  used on input line 192.
 (pdftex.def)             Requested size: 455.24411pt x 182.0949pt.
-<Img/punto_3_e_3.png, id=107, 1445.4pt x 578.16pt>
+
+Overfull \hbox (13.73615pt too wide) in paragraph at lines 192--193
+ [][]\OT1/cmr/m/n/10.95 '''[] 
+ []
+
+
+Overfull \hbox (13.73615pt too wide) in paragraph at lines 193--193
+[][]\OT1/cmr/m/n/10.95 ''' [] 
+ []
+
+<Img/punto_3_e_3.png, id=112, 1445.4pt x 578.16pt>
 File: Img/punto_3_e_3.png Graphic file (type png)
 <use Img/punto_3_e_3.png>
-Package pdftex.def Info: Img/punto_3_e_3.png  used on input line 199.
+Package pdftex.def Info: Img/punto_3_e_3.png  used on input line 200.
 (pdftex.def)             Requested size: 455.24411pt x 182.0949pt.
- [5 <./Img/punto_3_e_1.png> <./Img/punto_3_e_2.png> <./Img/punto_3_e_3.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
+
+Overfull \hbox (13.73615pt too wide) in paragraph at lines 200--201
+ [][]\OT1/cmr/m/n/10.95 '''[] 
+ []
+
+
+Overfull \hbox (13.73615pt too wide) in paragraph at lines 201--201
+[][]\OT1/cmr/m/n/10.95 ''' [] 
+ []
+
+[5 <./Img/punto_3_e_1.png> <./Img/punto_3_e_2.png> <./Img/punto_3_e_3.png>]
+
+LaTeX Warning: Reference `S.disc' on page 6 undefined on input line 252.
+
+
+LaTeX Warning: Reference `DFT' on page 6 undefined on input line 252.
+
+[6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
  ("/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux"
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 276.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 276.
 Package rerunfilecheck Info: File `Equipo2-guia4-ej3y4.out' has not changed.
-(rerunfilecheck)             Checksum: 1E95CBB263E35C38A9D3132C624E19A4;509.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
+(rerunfilecheck)             Checksum: 779FBBCEFF8360F88C5ED77607DD8346;555.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 276.
  ) 
 Here is how much of TeX's memory you used:
- 9096 strings out of 480931
- 138186 string characters out of 2908714
- 418650 words of memory out of 3000000
- 24761 multiletter control sequences out of 15000+200000
- 542945 words of font info for 64 fonts, out of 3000000 for 9000
+ 9138 strings out of 480931
+ 138857 string characters out of 2908714
+ 419687 words of memory out of 3000000
+ 24787 multiletter control sequences out of 15000+200000
+ 543157 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,8n,46p,716b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf" (6 pages, 884581 bytes).
+ 48i,8n,46p,716b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
+Output written on "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf" (7 pages, 916515 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
