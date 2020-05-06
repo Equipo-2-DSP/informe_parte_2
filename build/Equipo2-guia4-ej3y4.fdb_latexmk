@@ -1,5 +1,6 @@
 # Fdb version 3
 <<<<<<< HEAD
+<<<<<<< HEAD
 ["pdflatex"] 1588702982 "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex" "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf" "Equipo2-guia4-ej3y4" 1588702986
   "/home/lautaro/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1587655044 10008707 592b054f904aa8abd9264bb3f29df06d ""
   "/home/lautaro/.miktex/texmfs/data/pdftex/config/pdftex.map" 1588551404 80069 3e0ec63198bf11be7be2af43d5337ee6 ""
@@ -17,11 +18,17 @@
   "/home/lautaro/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty" 1587753691 7008 f92eaa0a3872ed622bbf538217cd2ab7 ""
   "/home/lautaro/.miktex/texmfs/install/tex/latex/atveryend/atveryend.sty" 1587753688 19336 ce7ae9438967282886b3b036cfad1e4d ""
   "/home/lautaro/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty" 1587753679 3935 57aa3c3e203a5c2effb4d2bd2efbc323 ""
+=======
+["pdflatex"] 1588780171 "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex" "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf" "Equipo2-guia4-ej3y4" 1588786188
+  "/home/lautaro/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1587655044 10008707 592b054f904aa8abd9264bb3f29df06d ""
+  "/home/lautaro/.miktex/texmfs/data/pdftex/config/pdftex.map" 1588717248 80069 3e0ec63198bf11be7be2af43d5337ee6 ""
+>>>>>>> codigo-python-ejercicio-4
   "/home/lautaro/.miktex/texmfs/install/tex/latex/babel-spanish/spanish.ldf" 1587655058 27077 ed7ae8ad64fbc001176aa9f3fa2599b5 ""
   "/home/lautaro/.miktex/texmfs/install/tex/latex/caption/caption.sty" 1587753656 57350 70b0c251b0022f1db12ad7dd4c1aa547 ""
   "/home/lautaro/.miktex/texmfs/install/tex/latex/caption/caption3.sty" 1587753656 62012 5e9d40ecd926a6f500919e4c7e1480de ""
   "/home/lautaro/.miktex/texmfs/install/tex/latex/caption/subcaption.sty" 1587753656 5937 3a338c8462fea6d5e61cecda091f49cf ""
   "/home/lautaro/.miktex/texmfs/install/tex/latex/float/float.sty" 1587655061 6916 f35860e0302c70cb81cb70b0a7937693 ""
+<<<<<<< HEAD
   "/home/lautaro/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg" 1587753663 1104 d237cad3f14be9fd91fe1f904d051a01 ""
   "/home/lautaro/.miktex/texmfs/install/tex/latex/geometry/geometry.sty" 1587753663 42759 e63af52ccddba7489ac0e17d6a3344bd ""
   "/home/lautaro/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty" 1587753676 18571 5a6205e2f490b14bdc73fa03b48f19d6 ""
@@ -40,6 +47,10 @@
   "/usr/local/share/miktex-texmf/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1587654859 908 2921f8a10601f252058503cc6570e581 ""
   "/usr/local/share/miktex-texmf/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1587654859 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/usr/local/share/miktex-texmf/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1587654859 940 228d6584342e91276bf566bcf9716b83 ""
+=======
+  "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/Equipo2-guia4-ej3y4.tex" 1588786187 7004 f350fe02e1762dc6cf32ccc791e8911a ""
+  "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.aux" 1588786187 1866 cc236579181eaa2e6da9e1027583608a ""
+>>>>>>> codigo-python-ejercicio-4
   "/usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmbx10.tfm" 1587654873 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmbx12.tfm" 1587654873 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/share/miktex-texmf/fonts/tfm/public/cm/cmbxti10.tfm" 1587654873 1532 9162035f4e7176612125649e348e2195 ""
@@ -114,6 +125,7 @@
   "/usr/local/share/miktex-texmf/tex/latex/hyperref/nameref.sty" 1587654882 13244 0070bcab7b5a88187847128d22faf4d8 ""
   "/usr/local/share/miktex-texmf/tex/latex/hyperref/pd1enc.def" 1587654882 14134 32b36577d311ddb6522413c7581ee968 ""
   "/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdfmode.def" 1587654884 25398 19ae1e59d7f4a47fefb457d851f6f503 ""
+<<<<<<< HEAD
   "/usr/local/share/miktex-texmf/tex/latex/pdftexcmds/pdftexcmds.sty" 1587654913 19963 36fd8e818f9f0f32e2db8413d4970122 ""
   "/usr/local/share/miktex-texmf/tex/latex/url/url.sty" 1587654926 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "Equipo2-guia4-ej3y4.tex" 1588702959 14610 cf2b98dfa5ba7c129985f455f9483ab6 ""
@@ -178,3 +190,18 @@
   "build/Equipo2-guia4-ej3y4.log"
   "d:/Isaias/Documents/Git/informe_parte_2/build/Equipo2-guia4-ej3y4.log"
 >>>>>>> origin/Ejercicio4-Incisog
+=======
+  "/usr/local/share/miktex-texmf/tex/latex/tools/indentfirst.sty" 1587654925 1619 d4cd7231755dd1dfa89af8ceddfb0e4d ""
+  "Equipo2-guia4-ej3y4.tex" 1588786187 7004 f350fe02e1762dc6cf32ccc791e8911a ""
+  "Img/punto_3_b.png" 1588627195 142472 e8ef8923e47aafd3cd100af75c6fc70e ""
+  "Img/punto_3_c.png" 1588627198 209479 6d049cfe96abf69c7a35cef7609184df ""
+  "Img/punto_3_e_1.png" 1588627206 125996 328f5892cda4a327c469534d2e93cea5 ""
+  "Img/punto_3_e_3.png" 1588627208 102171 a36e79fc308af281b390506b77af6b4a ""
+  "build/Equipo2-guia4-ej3y4.aux" 1588786187 1866 cc236579181eaa2e6da9e1027583608a "pdflatex"
+  (generated)
+  "build/Equipo2-guia4-ej3y4.log"
+  "build/Equipo2-guia4-ej3y4.pdf"
+  "build/Equipo2-guia4-ej3y4.aux"
+  "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.pdf"
+  "/home/lautaro/Documents/Facultad/DSP/Proyecto 1/parte 2/build/Equipo2-guia4-ej3y4.log"
+>>>>>>> codigo-python-ejercicio-4
