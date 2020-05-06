@@ -268,7 +268,21 @@ se ve en la ecuacion (omega.k creo que era Xavi). Reemplazando dicha relación e
  Si ahora queremos analizar la relacion existente entre la DTFT y la CTFT, solo basta con realizar un nuevo analisis de la ecuacion (\ref{DTFT}), en ella se puede ver implicita la relacion buscada.
  Por inspeccion de la ultima expresion, vemos que la DFTF de la señal muestrada no es mas que la periodización del espectro de la señal continua original.
  En resumen la relacion entre la DTFT y la CTFT es que la DTFT es un espectro periodico con posible aliasing de la señal CTFT.
- 
+ \subsection{Obtencion de la CTFT a partir de la DFT}
+ Para estimar la CTFT a partir de la DFT se puede optar por 2 caminos igualmente validos, estos son :
+ \begin{enumerate}
+ \item Muestrar la señal $x_{c}(t)$ y se obtiene la señal $x[n]=x_{c}(nT)$, y se calcula la DFT a dicha señal.
+ \item Utilizar la ecuacion (22).
+ \end{enumerate}
+Se puede obtener una estimación exacta si se eligen de manera correcta los siguientes parametros:
+ \begin{enumerate}
+     \item Frecuencia de muestreo: se debe elegir una $F_s$ que cumpla el teorema de muestreo (ref). Esta condición se ve reflejada en el \textit{aliasing} resultante del espectro. Si bien el espectro siempre va presentar aliasing (debido a que se esta muestreando una señal aperiódica) éste se puede disminuir al utilizar $F_s$ cada vez mayores.
+     \item Cantidad de muestras: se debe elegir una cantidad de muestras $N$ mínima que contenga la información de la señal muestreada. A partir de esta idea se desprenden dos situaciones:
+     \begin{itemize}
+         \item Señal $x[n]$ de duración finita: En este caso si la longitud de la señal es igual a $L$, la cantidad de muestras debe ser $N \geq L$.
+         \item Señal $x[n]$ de duración infinita: En este caso la cantidad de muestras $N$ debe ser lo mas representativa posible, es decir mientras mayor sea $N$ mejor sera la aproximación.
+     \end{itemize}
+\end{enumerate}
 
  \subsubsection*{calculo aproximado de la CTFT con FFT con N=10 y N=1000}
  se muestrea la señal $x_{c}(t)$ a la frecuencia $Fs=3 Hz$ y se obtuvo una señal $x[n]$ la cual consta de 9 puntos diferentes de cero, para luego calcularse la DFT con 2 valores de N distinto; N=10 y N=1000, se obtuvo el siguiente resultado:
