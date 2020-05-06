@@ -269,12 +269,44 @@ se ve en la ecuacion (omega.k creo que era Xavi). Reemplazando dicha relación e
  Por inspeccion de la ultima expresion, vemos que la DFTF de la señal muestrada no es mas que la periodización del espectro de la señal continua original.
  En resumen la relacion entre la DTFT y la CTFT es que la DTFT es un espectro periodico con posible aliasing de la señal CTFT.
  
+ \subsection{ Cálculo aproximado de la CTFT}
+
+Se establece como frecuencia de muestreo $F_s=1Hz$, ya que dicha frecuencia es mayor a 2 veces la frecuencia del primer cero, por lo tanto la señal
+muestreada conserva el $90\%$ de la energía de la señal original. Obteniendo 
+
+\begin{equation}
+    x[n]=-\mu[n]\mu[3-n]
+\end{equation}
+
+En general se puede establecer que para cualquier frecuencia de muestreo $F_s$ se obtiene 
+
+\begin{equation}
+    x_{F_s}[n]=-\mu[n]\mu[3F_s-n]
+\end{equation}
+
+Donde el ancho del pulso esta determinado directamente por el valor de $F_s$.
+
+Luego al realizar una variación de frecuencia se obtiene que a mayor $F_s$ mejor es la paroximación, esto se debe a que el espectro de la 
+señal de $x(t)$ no es de banda limitada, y por lo tanto siempre existira aliasing.  
+
+\begin{figure}[H]
+    \centering
+    %\includegraphics[width=\textwidth]{Img/punto_4_d.png}
+    \caption{Aproximacion de la CTFT mediante la \textit{fft} para distintos valores de $F_s$ y con zero padding hasta $1024muestras$.}
+    \label{fig.4d}
+\end{figure}
+
+Al observar la Figura \ref{fig.4d} se observa que para $F_s=1Hz$ es posible recuperar los 2 primeros lobulos del espectro, pero su amplitud 
+tiene un error notorio. Mientras que si bajamos la frecuencia a $F_s=0.5Hz$ solo recuperamos 1 solo lobulo, y el aliasing debido al mal muestreo de 
+la señal es muy notorio. Si utilizamos frecuencia menores a $0.4Hz$ se obtiene una señal continua debido al gran aliasing sufrido por la superposición
+del lobulo central. Al aumentar $F_s$ hasta $10Hz$ se observa que la aproximación del espectro mejora mucho en cuanto a la amplitud y se pueden recuperar 
+muchos mas lobulos.
 
  \subsubsection*{calculo aproximado de la CTFT con FFT con N=10 y N=1000}
  se muestrea la señal $x_{c}(t)$ a la frecuencia $Fs=3 Hz$ y se obtuvo una señal $x[n]$ la cual consta de 9 puntos diferentes de cero, para luego calcularse la DFT con 2 valores de N distinto; N=10 y N=1000, se obtuvo el siguiente resultado:
  \begin{figure}
  \centering
-     \includegraphics[width=\textwidth]{Img/punto_4_e.png}
+     %\includegraphics[width=\textwidth]{Img/punto_4_e.png}
      \caption{DFT de la señal x[n] para N=10 y N=1000}
      \label{fig.4e}
  \end{figure} 
