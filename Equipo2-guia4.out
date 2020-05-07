@@ -11,3 +11,4 @@
 \BOOKMARK [2][-]{subsection.2.4}{C\341lculo de la CTFT de x\(t\) utlizando la fft con N=10 y N=1000}{section.2}% 11
 \BOOKMARK [2][-]{subsection.2.5}{Implementaci\363n de la funci\363n fftshift}{section.2}% 12
 \BOOKMARK [2][-]{subsection.2.6}{Estimaci\363n de la CTFT a partir de la DFT}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.7}{C\363digo para la obtenci\363n de la CTFT:}{section.2}% 14

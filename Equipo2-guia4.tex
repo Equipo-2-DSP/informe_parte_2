@@ -371,6 +371,63 @@ forma al espectro de la CTFT.
 
 No obstante, para obtener una aproximación exacta se deben cumplir las condiciones analizadas en la sección \ref{secc4c}.
 Por último, el efecto del método zero-padding tiene como finalidad mejorar la visualización del espectro, sin alterar la información existente.
+\subsection{Código para la obtención de la CTFT:}
+    En esta sección se utiliza el código adjunto a este informe para calcular la CTFT de señales aperiódicas continuas, para ello se probara con tres señales distintas. En principio, se calcula la CTFT de forma teórica. Luego, se muestra en gráficos el resultado obtenido de forma numérica. Las señales utilizadas son las siguientes:
+    \begin{itemize}
+    \item \begin{equation}
+    x_{1}(t) = \left\{ 
+        \begin{array}{ll} 
+        t & \mathrm{si\ } 0\leq t \leq 5 \\
+        10-t & \mathrm{si\ } 5\leq t \leq 10 \\
+        0 & \mathrm{sino\ } \\
+        \end{array} 
+        \right.
+    \end{equation}
+    
+    \item \begin{equation} 
+        x_{2}(t) = \left\{ 
+        \begin{array}{ll} 
+        1 & \mathrm{si\ } -2\leq t \leq +2, \\
+        0 & \mathrm{sino\ } \\
+        \end{array} 
+        \right.
+    \end{equation}
+    
+    \item \begin{equation} 
+        x_{3}(t)=(-0,5)^{t}u(t)
+    \end{equation}
+
+    \end{itemize}   
+    
+    A continuación, se pueden observar los resultados de la CTFT de forma numérica, se agragan ademas la CTFT teorica y la DTFT resultante del muestreo de $x_{c}(t)$ en las siguientes figuras:
+    
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Img/punto_4_h_1.png}
+    \caption{espectro de la señal $x_{1}(t)$ mediante el algoritmo.}
+    \label{fig.4hi}
+    \end{figure} 
+
+
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Img/punto_4_h_2.png}
+    \caption{espectro de la señal $x_{2}(t)$ mediante el algoritmo.}
+    \label{fig.4hii}
+    \end{figure}
+
+
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Img/punto_4_h_3.png}
+    \caption{espectro de la señal $x_{3}(t)$ mediante el algoritmo.}
+    \label{fig.4hiii}
+    \end{figure}
+
+    Se puede apreciar que los espectros representados en las figuras \ref{fig.4hi},\ref{fig.4hii} y \ref{fig.4hiii} coinciden de manera aproximada con lo obtenido de manera teórica. 
+    
+
+
 
 
 \begin{thebibliography}{0}
